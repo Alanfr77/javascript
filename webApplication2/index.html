@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="default.css">
+    <title>Practica | javascript</title>
+</head>
+<body>
+
+    <div class="main" id="cambiarDiv">
+        <div class="contenedor-global">
+            <div class="contenedor-nombre-usuario">
+                <script src="app.js"></script>
+            </div><br>
+            <div class="contenedor-cambiar-color">
+                <p>Cambiar color de fondo</p>
+                <select id="seleccionColor" onchange="cambiarColorFondo()">
+                    <option value="white">Blanco</option>
+                    <option value="lightblue">Azul Claro</option>
+                    <option value="lightgreen">Verde Claro</option>
+                </select>
+            </div> 
+            <div class="contenedor-cambiar-fuente">
+                <p>Cambiar fuente de la página:</p>
+                <select id="seleccionFuente" onchange="cambiarFuente()">
+                    <option value="Arial">Arial</option>
+                    <option value="Cursive">Cursiva</option>
+                    <option value="Times new roman">Times New Roman</option>
+                </select>
+            </div>
+            <div class="contenedor-cambiar-color-fuente">
+                <p>Cambiar color de fuente:</p>
+                <select id="seleccionColorFuente" onchange="cambiarColorFuente()">
+                    <option value="red">Rojo</option>
+                    <option value="lightblue">Azul Claro</option>
+                    <option value="lightgreen">Verde Claro</option>
+                </select>
+            </div>
+            <div class="contenedor-tipo-fuente">
+                <p>Tipo de fuente</p>
+                <select id="seleccionTipoFuente" onchange="cambiarTipoFuente()">
+                    <option value="bold">Negrita</option>
+                    <option value="lighter">Light</option>
+                    <option value="normal">Normal</option>
+                </select>
+            </div>
+            <div class="contenedor-cambiar-imagen">
+                <button onclick="cambiarImagen()">Cambiar Imagen</button>
+                <button onclick="cambiarDiv()">Cambiar div</button><br>
+                <img id="varImagen" src="background1.jpg"><br>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
